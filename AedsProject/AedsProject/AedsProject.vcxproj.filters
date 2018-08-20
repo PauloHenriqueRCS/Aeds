@@ -34,5 +34,8 @@
     <Text Include="file.txt">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="salario.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
