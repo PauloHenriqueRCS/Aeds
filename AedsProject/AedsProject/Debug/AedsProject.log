@@ -6,5 +6,5 @@ c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(284
 c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(296): warning C4305: '=': truncation from 'double' to 'float'
 c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(298): warning C4305: '=': truncation from 'double' to 'float'
 c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(299): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(386): warning C4715: 'ReadPessoas': not all control paths return a value
+c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(390): warning C4715: 'ReadPessoas': not all control paths return a value
   AedsProject.vcxproj -> C:\Users\Paulo\Documents\GitHub\Aeds\AedsProject\Debug\AedsProject.exe
