@@ -1,10 +1,2 @@
-﻿  AedsProject.cpp
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(119): warning C4018: '>=': signed/unsigned mismatch
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(137): warning C4018: '>=': signed/unsigned mismatch
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(284): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(296): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(298): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(299): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\aedsproject.cpp(390): warning C4715: 'ReadPessoas': not all control paths return a value
+﻿  ListF.cpp
   AedsProject.vcxproj -> C:\Users\Paulo\Documents\GitHub\Aeds\AedsProject\Debug\AedsProject.exe

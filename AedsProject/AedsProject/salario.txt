@@ -1,3 +1,0 @@
-Código: 3, Nome:  Joaquim Fernandes, Salário: 4293,000000
-Código: 2, Nome:  Marcela Araujo, Salário: 3529,000000
-Código: 6, Nome:  Murilo Paulo, Salário: 1908,000000
