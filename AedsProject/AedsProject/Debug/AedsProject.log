@@ -1,2 +1,8 @@
-﻿  ListF.cpp
+﻿  stdafx.cpp
+  DCList.cpp
+  ListDE.cpp
+  ListF.cpp
+  Main.cpp
+  Generating Code...
+c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\dclist.cpp(21): warning C4715: 'DCList::height': not all control paths return a value
   AedsProject.vcxproj -> C:\Users\Paulo\Documents\GitHub\Aeds\AedsProject\Debug\AedsProject.exe
