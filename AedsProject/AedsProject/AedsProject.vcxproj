@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -148,6 +148,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Aluno.h" />
+    <ClInclude Include="battery.h" />
+    <ClInclude Include="block.h" />
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="DCList.h" />
     <ClInclude Include="Funcionario.h" />
@@ -160,6 +162,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="battery.cpp" />
     <ClCompile Include="DCList.cpp" />
     <ClCompile Include="ListDE.cpp" />
     <ClCompile Include="ListF.cpp" />

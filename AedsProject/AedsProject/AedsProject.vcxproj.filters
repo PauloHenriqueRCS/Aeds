@@ -28,6 +28,12 @@
     <Filter Include="Source Files\Lists\DoubleCircularList">
       <UniqueIdentifier>{8625a0c5-46f1-4643-a32b-bb3a4026dda5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\battery">
+      <UniqueIdentifier>{46ddb50d-a433-415b-8e08-2085187c993e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\battery">
+      <UniqueIdentifier>{a3e74db4-c5cc-40df-b36a-e01f94e2be7f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -63,6 +69,12 @@
     <ClInclude Include="DCList.h">
       <Filter>Header Files\Lists\DoubleCircularList</Filter>
     </ClInclude>
+    <ClInclude Include="battery.h">
+      <Filter>Header Files\battery</Filter>
+    </ClInclude>
+    <ClInclude Include="block.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -79,6 +91,9 @@
     </ClCompile>
     <ClCompile Include="DCList.cpp">
       <Filter>Source Files\Lists\DoubleCircularList</Filter>
+    </ClCompile>
+    <ClCompile Include="battery.cpp">
+      <Filter>Source Files\battery</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

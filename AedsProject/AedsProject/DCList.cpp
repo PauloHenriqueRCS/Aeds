@@ -18,6 +18,7 @@ int DCList::height(int num_record)
 			}
 		} while (record != first);
 	}
+	return 0;
 }
 
 int DCList::pairsElements()
