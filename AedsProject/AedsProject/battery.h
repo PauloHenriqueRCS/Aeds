@@ -10,5 +10,24 @@ struct Battery {
 	bool unpack();
 	void clearAll();
 	void print();
-	bool chainBalancing(std::string *chain);
+	void printInv();
+	bool palin();
+	std::string  getExpression();
+	bool invert();
+	bool transferElements(Battery *battery);
+	int equals(Battery * battery);
+	void insertCar(int position, char car);
+	int calculator();
+};
+
+struct BatteryC {
+	BlockC *top;
+	void init();
+	int qtd;
+	bool isEmpty();
+	void stack(int element);
+	bool unpack();
+	void clearAll();
+	void print();
+	int calculator();
 };
