@@ -28,11 +28,17 @@
     <Filter Include="Source Files\Lists\DoubleCircularList">
       <UniqueIdentifier>{8625a0c5-46f1-4643-a32b-bb3a4026dda5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\battery">
-      <UniqueIdentifier>{46ddb50d-a433-415b-8e08-2085187c993e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\battery">
+    <Filter Include="Source Files\Bbattery">
       <UniqueIdentifier>{a3e74db4-c5cc-40df-b36a-e01f94e2be7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bbattery">
+      <UniqueIdentifier>{543eee70-ce0a-48ba-ad18-63821774ddc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Row">
+      <UniqueIdentifier>{1d78fecf-698a-422e-a242-45fa3a5d2c23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Row">
+      <UniqueIdentifier>{7bc2f166-20dd-4e88-b240-bea6c7942811}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -69,10 +75,16 @@
     <ClInclude Include="DCList.h">
       <Filter>Header Files\Lists\DoubleCircularList</Filter>
     </ClInclude>
-    <ClInclude Include="battery.h">
-      <Filter>Header Files\battery</Filter>
+    <ClInclude Include="Battery.h">
+      <Filter>Header Files\Bbattery</Filter>
     </ClInclude>
-    <ClInclude Include="block.h">
+    <ClInclude Include="Row.h">
+      <Filter>Header Files\Row</Filter>
+    </ClInclude>
+    <ClInclude Include="Person.h">
+      <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Airplane.h">
       <Filter>Header Files\Objects</Filter>
     </ClInclude>
   </ItemGroup>
@@ -92,8 +104,11 @@
     <ClCompile Include="DCList.cpp">
       <Filter>Source Files\Lists\DoubleCircularList</Filter>
     </ClCompile>
-    <ClCompile Include="battery.cpp">
-      <Filter>Source Files\battery</Filter>
+    <ClCompile Include="Battery.cpp">
+      <Filter>Source Files\Bbattery</Filter>
+    </ClCompile>
+    <ClCompile Include="Row.cpp">
+      <Filter>Source Files\Row</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

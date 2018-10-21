@@ -147,9 +147,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Airplane.h" />
     <ClInclude Include="Aluno.h" />
-    <ClInclude Include="battery.h" />
-    <ClInclude Include="block.h" />
+    <ClInclude Include="Battery.h" />
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="DCList.h" />
     <ClInclude Include="Funcionario.h" />
@@ -157,16 +157,19 @@
     <ClInclude Include="ListDE.h" />
     <ClInclude Include="ListF.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="Person.h" />
     <ClInclude Include="Record.h" />
+    <ClInclude Include="Row.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="battery.cpp" />
+    <ClCompile Include="Battery.cpp" />
     <ClCompile Include="DCList.cpp" />
     <ClCompile Include="ListDE.cpp" />
     <ClCompile Include="ListF.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Row.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

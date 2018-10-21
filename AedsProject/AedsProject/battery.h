@@ -1,27 +1,8 @@
 #pragma once
-#include <string>
-#include "block.h"
-struct Battery {
-	Block *top;
-	void init();
-	int qtd;
-	bool isEmpty();
-	void stack(char element);
-	bool unpack();
-	void clearAll();
-	void print();
-	void printInv();
-	bool palin();
-	std::string  getExpression();
-	bool invert();
-	bool transferElements(Battery *battery);
-	int equals(Battery * battery);
-	void insertCar(int position, char car);
-	int calculator();
-};
+#include "Node.h"
 
-struct BatteryC {
-	BlockC *top;
+struct Battery {
+	Node *top;
 	void init();
 	int qtd;
 	bool isEmpty();
@@ -29,5 +10,4 @@ struct BatteryC {
 	bool unpack();
 	void clearAll();
 	void print();
-	int calculator();
 };

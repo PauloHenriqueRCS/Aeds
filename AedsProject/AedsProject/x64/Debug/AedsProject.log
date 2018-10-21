@@ -1,0 +1,10 @@
+﻿  stdafx.cpp
+  Battery.cpp
+  DCList.cpp
+  ListDE.cpp
+  ListF.cpp
+  Main.cpp
+c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\main.cpp(32): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Row.cpp
+  Generating Code...
+  AedsProject.vcxproj -> C:\Users\Paulo\Documents\GitHub\Aeds\AedsProject\x64\Debug\AedsProject.exe

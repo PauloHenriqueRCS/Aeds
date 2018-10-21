@@ -1,5 +1,5 @@
-﻿  battery.cpp
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\battery.cpp(222): warning C4804: '<=': unsafe use of type 'bool' in operation
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\battery.cpp(227): warning C4018: '<': signed/unsigned mismatch
-c:\users\paulo\documents\github\aeds\aedsproject\aedsproject\battery.cpp(238): warning C4018: '<': signed/unsigned mismatch
-  AedsProject.vcxproj -> C:\Users\Paulo\Documents\GitHub\Aeds\AedsProject\Debug\AedsProject.exe
+﻿Main.obj : error LNK2005: _main already defined in Battery.obj
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Battery<int>::init(void)" (?init@?$Battery@H@@QAEXXZ) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Battery<int>::stack(int)" (?stack@?$Battery@H@@QAEXH@Z) referenced in function _main
+Main.obj : error LNK2019: unresolved external symbol "public: void __thiscall Battery<int>::print(void)" (?print@?$Battery@H@@QAEXXZ) referenced in function _main
+C:\Users\Paulo\Documents\GitHub\Aeds\AedsProject\Debug\AedsProject.exe : fatal error LNK1120: 3 unresolved externals
