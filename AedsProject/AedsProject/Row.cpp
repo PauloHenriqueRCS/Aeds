@@ -107,6 +107,12 @@ void Airplane::init(std::string name, int number)
 	this->number = number;
 }
 
+void Row::initAirplane()
+{
+	this->frontAirplane = this->behindAirplane = nullptr;
+	this->qtd = 0;
+}
+
 bool Row::isEmptyAirplane()
 {
 	return (this->frontAirplane == nullptr) && (this->behindAirplane == nullptr);
@@ -158,7 +164,7 @@ void Row::printAirplane()
 		Airplane * airplane = frontAirplane;
 		while (airplane != nullptr)
 		{
-			std::cout << airplane->name << "\n" << airplane->number << "\n";
+			std::cout << airplane->name << " " << airplane->number << "\n";
 			airplane = airplane->next;
 		}
 		std::cout << "\n";
@@ -195,7 +201,7 @@ bool Row::removeAirplane(int number)
 void Row::printFirstAirplane()
 {
 	if (!isEmptyAirplane())
-		std::cout << frontAirplane->name << "\n" << frontAirplane->number << "\n";
+		std::cout << frontAirplane->name << " " << frontAirplane->number << "\n";
 }
 
 // 4. Person
@@ -206,6 +212,12 @@ void Person::init(std::string name, int age)
 	this->age = age;
 }
 
+
+void Row::initPerson()
+{
+	this->frontPerson = this->behindPerson = nullptr;
+	this->qtd = 0;
+}
 
 bool Row::isEmptyPerson()
 {
@@ -231,28 +243,33 @@ void Row::rowingPerson(std::string name, int age)
 	}
 }
 
-void Row::orderPerson()
+void Row::rowingOrderPerson(string name, int age)
 {
-	if (!isEmptyPerson()) {
-		Person * person = frontPerson;
-		Person * personNext = frontPerson->next;
-		Person * personAux = new Person();
+	Person * person = new Person();
+	person->init(name, age);
 
-		if (frontPerson->age < personNext->age) {
-			personAux = personNext->next;
-			frontPerson->next = personAux;
-			personNext->next = frontPerson;
-			frontPerson = personNext;
+	if (isEmptyPerson())
+	{
+		frontPerson = person;
+		behindPerson = person;
+	}
+	else
+	{
+		Person * curr = frontPerson;
+		Person * prev = nullptr;
+
+		while (curr != nullptr && curr->age > person->age) {
+			prev = curr;
+			curr = curr->next;
 		}
-
-		while (person != nullptr)
-		{
-			if (person->age < personNext->age) {
-
-			}
+		person->next = curr;
+		if (prev == nullptr) {
+			frontPerson = person;
+			behindPerson = person;
 		}
-
-
+		else {
+			prev->next = person;
+		}	
 	}
 }
 
@@ -283,7 +300,7 @@ void Row::printPerson()
 		Person * person = frontPerson;
 		while (person != nullptr)
 		{
-			std::cout << person->name << "\n" << person->age << "\n";
+			std::cout << person->name << " " << person->age << "\n";
 			person = person->next;
 		}
 		std::cout << "\n";
@@ -316,3 +333,103 @@ bool Row::removePerson(int age)
 	return false;
 }
 
+
+
+// 5. Process
+
+void Process::init(int id, int timeStamp)
+{
+	this->id = id;
+	this->timeStamp = timeStamp;
+}
+
+void Row::initProcess()
+{
+	this->frontProcess = this->behindProcess = nullptr;
+	this->qtd = 0;
+}
+
+bool Row::isEmptyProcess()
+{
+	return (this->frontProcess == nullptr) && (this->behindProcess == nullptr);
+}
+
+void Row::rowingProcess(int id, int timeStamp)
+{
+	Process * process = new Process();
+	if (process == nullptr)
+		std::cout << "faill memmory\n";
+	else {
+		process->init(id, timeStamp);
+		if (isEmptyProcess()) {
+			frontProcess = process;
+			behindProcess = process;
+		}
+		else {
+			behindProcess->next = process;
+			behindProcess = process;
+		}
+		qtd++;
+	}
+}
+
+
+bool Row::dewormingProcess()
+{
+	if (isEmptyProcess())
+		return false;
+	else {
+		Process * process = frontProcess;
+		frontProcess = process->next;
+		if (frontProcess == nullptr)
+			behindProcess = nullptr;
+		delete process;
+		qtd--;
+		return true;
+	}
+}
+
+void Row::clearAllProcess()
+{
+	while (!isEmptyProcess())
+		dewormingProcess();
+}
+
+void Row::printProcess()
+{
+	if (!isEmptyProcess()) {
+		Process * process = frontProcess;
+		while (process != nullptr)
+		{
+			std::cout << process->id << " " << process->timeStamp << "\n";
+			process = process->next;
+		}
+		std::cout << "\n";
+	}
+}
+
+bool Row::removeProcess(int timeStamp)
+{
+	Process * process = frontProcess;
+	if (process->timeStamp == timeStamp) {
+		dewormingProcess();
+		return true;
+	}
+	else {
+		Process * processPrev = process;
+		process = process->next;
+		while (process != nullptr)
+		{
+			if (process->timeStamp == timeStamp) {
+				processPrev->next = process->next;
+				process = nullptr;
+				delete process;
+				qtd--;
+				return true;
+			}
+			processPrev = process;
+			process = process->next;
+		}
+	}
+	return false;
+}

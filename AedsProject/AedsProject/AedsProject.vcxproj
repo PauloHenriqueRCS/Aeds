@@ -158,6 +158,7 @@
     <ClInclude Include="ListF.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Person.h" />
+    <ClInclude Include="Process.h" />
     <ClInclude Include="Record.h" />
     <ClInclude Include="Row.h" />
     <ClInclude Include="stdafx.h" />
