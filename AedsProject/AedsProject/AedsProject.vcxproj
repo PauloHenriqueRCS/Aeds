@@ -156,6 +156,7 @@
     <ClInclude Include="List.h" />
     <ClInclude Include="ListDE.h" />
     <ClInclude Include="ListF.h" />
+    <ClInclude Include="No.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Process.h" />
@@ -163,6 +164,7 @@
     <ClInclude Include="Row.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="tree.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Battery.cpp" />
@@ -177,6 +179,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="tree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="file.txt" />

@@ -31,14 +31,17 @@
     <Filter Include="Source Files\Bbattery">
       <UniqueIdentifier>{a3e74db4-c5cc-40df-b36a-e01f94e2be7f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Bbattery">
-      <UniqueIdentifier>{543eee70-ce0a-48ba-ad18-63821774ddc0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Row">
       <UniqueIdentifier>{1d78fecf-698a-422e-a242-45fa3a5d2c23}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Row">
       <UniqueIdentifier>{7bc2f166-20dd-4e88-b240-bea6c7942811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Battery">
+      <UniqueIdentifier>{543eee70-ce0a-48ba-ad18-63821774ddc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Trees">
+      <UniqueIdentifier>{7238ab04-d26e-4071-9b5f-71afe1fb8188}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -76,7 +79,7 @@
       <Filter>Header Files\Lists\DoubleCircularList</Filter>
     </ClInclude>
     <ClInclude Include="Battery.h">
-      <Filter>Header Files\Bbattery</Filter>
+      <Filter>Header Files\Battery</Filter>
     </ClInclude>
     <ClInclude Include="Row.h">
       <Filter>Header Files\Row</Filter>
@@ -89,6 +92,12 @@
     </ClInclude>
     <ClInclude Include="Process.h">
       <Filter>Header Files\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="tree.h">
+      <Filter>Header Files\Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="No.h">
+      <Filter>Header Files\Trees</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +121,9 @@
     </ClCompile>
     <ClCompile Include="Row.cpp">
       <Filter>Source Files\Row</Filter>
+    </ClCompile>
+    <ClCompile Include="tree.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
